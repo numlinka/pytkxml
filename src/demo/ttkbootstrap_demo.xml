@@ -1,0 +1,20 @@
+<Window title="Fuck You NVIDIA">
+  <StringVar id="vcc" value="这是一个字符串变量" />
+
+  <Frame side="top">
+    <Button id="hello_world" text="Hello World!" command="$bin_hello_world" width="60" />
+  </Frame>
+
+  <Frame side="top">
+    <Label textvariable="$variable.vcc" />
+  </Frame>
+
+  <class id="option" width="10" side="right" />
+  <class id="nofirst" padx="0 10" />
+
+  <Frame side="bottom" fill="x" padx="10" pady="10">
+    <Button class="option" text="sure" bootstyle="success" />
+    <Button class="option nofirst" text="cancel" bootstyle="warning" command="$bin_modify_widget" />
+    <Button class="option nofirst" text="delete" bootstyle="danger" command="$bin_modify_variable"/>
+  </Frame>
+</Window>
